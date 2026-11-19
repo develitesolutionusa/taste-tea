@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Taste Tea Briyani &amp; Grill · Prospect Heights, IL</title>
+<link rel="preload" as="image" href="logo-mark.png">
+<link rel="preload" as="image" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,800;1,9..144,500&family=Hanken+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0d211b;--bg2:#143129;--line:#2c4a3f;--milk:#f1e3c8;--dim:#b9ad94;--saffron:#e0932f;--brass:#d6a948;--ink:#0d211b;
+--serif:"Fraunces",Georgia,serif;--sans:"Hanken Grotesk",system-ui,sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:dark}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d211b}}
+html{scroll-padding-top:132px;scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--milk);font:400 17px/1.55 var(--sans);overflow-x:hidden}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--saffron);outline-offset:3px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+/* hero */
+header.hero{position:relative;overflow:hidden;padding:28px 0 70px;border-bottom:6px solid var(--brass)}
+nav{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.logo{display:block;height:78px;width:auto}
+.call{background:var(--saffron);color:var(--ink);text-decoration:none;font-weight:700;padding:11px 20px;border-radius:999px;white-space:nowrap}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:30px;align-items:center;margin-top:56px}
+h1{font:800 clamp(36px,7vw,84px)/1.05 var(--serif);margin:0 0 22px;letter-spacing:-.02em}
+h1 em{font-style:italic;font-weight:500;color:var(--saffron)}
+.lede{max-width:46ch;color:var(--dim);font-size:19px;margin:0 0 28px}
+.pot{width:100%;max-width:340px;justify-self:center}
+.steam path{fill:none;stroke:var(--milk);stroke-width:5;stroke-linecap:round;opacity:0;animation:rise 4.5s ease-in-out infinite}
+.steam path:nth-child(2){animation-delay:1.4s}.steam path:nth-child(3){animation-delay:2.8s}
+@keyframes rise{0%{opacity:0;transform:translateY(24px)}35%{opacity:.7}100%{opacity:0;transform:translateY(-26px)}}
+/* start here */
+.start{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--line);border-radius:18px;margin:-34px 0 0;background:var(--bg2);position:relative}
+.start button{all:unset;cursor:pointer;padding:22px 24px;border-right:1px solid var(--line)}
+.start button:last-child{border:0}
+.start button:hover{background:#1b4034}
+.start b{display:block;font:500 24px/1.2 var(--serif)}
+.start span{color:var(--dim);font-size:15px}
+.start i{font-style:normal;color:var(--saffron);font-weight:700}
+/* controls */
+.bar{background:var(--bg);border-bottom:1px solid var(--line);position:sticky;top:env(safe-area-inset-top,0px);z-index:5}
+.bar .wrap{display:flex;flex-wrap:wrap;gap:12px 16px;align-items:center;padding-top:14px;padding-bottom:14px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;flex:1 1 280px;min-width:0}
+.chip{all:unset;box-sizing:border-box;cursor:pointer;white-space:nowrap;padding:8px 12px;min-height:40px;border:1px solid var(--line);border-radius:999px;font-weight:500;font-size:14px}
+.chip[aria-pressed=true]{background:var(--milk);color:var(--ink);border-color:var(--milk)}
+input[type=search]{background:var(--bg2);border:1px solid var(--line);color:var(--milk);border-radius:999px;padding:8px 14px;font:inherit;font-size:16px;flex:1 1 200px;min-width:0;width:auto;max-width:280px}
+input[type=search]::placeholder{color:var(--dim);opacity:1}
+/* menu */
+main{padding:30px 0 140px}
+section.cat{margin-top:46px}
+section.cat h2{font:800 clamp(30px,4vw,44px)/1 var(--serif);margin:0 0 8px;display:flex;align-items:baseline;gap:14px}
+section.cat h2 small{font:500 15px var(--sans);color:var(--dim)}
+ul{list-style:none;margin:18px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(240px,100%),1fr));gap:20px}
+li{background:var(--milk);color:var(--ink);border-radius:22px;overflow:hidden;display:flex;flex-direction:column}
+li .img{height:188px;overflow:hidden;background:#1a120c}
+li .img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .45s cubic-bezier(.16,1,.3,1)}
+li:hover .img img{transform:scale(1.045)}
+li .b{padding:16px 18px 18px;display:flex;flex-direction:column;gap:6px;flex:1}
+li .n{font:700 18px/1.25 var(--sans)}
+li .p{font:800 21px var(--serif);color:#7a1f1f;font-variant-numeric:tabular-nums}
+li .row{margin-top:auto;padding-top:12px}
+li .add{all:unset;box-sizing:border-box;cursor:pointer;display:block;width:100%;text-align:center;background:var(--saffron);color:var(--ink);font-weight:700;padding:11px;border-radius:999px;letter-spacing:.06em}
+li .add:hover{background:var(--brass)}
+li .step{display:flex;align-items:center;justify-content:space-between;background:var(--saffron);border-radius:999px;padding:4px}
+li .step button{all:unset;cursor:pointer;width:36px;height:36px;border-radius:50%;background:var(--ink);color:var(--milk);text-align:center;line-height:36px;font-weight:700}
+li .step span{font-weight:800}
+.none{color:var(--dim);padding:40px 0}
+/* tally */
+.tally{position:fixed;left:0;right:0;bottom:0;z-index:9;background:var(--milk);color:var(--ink);padding:12px 22px calc(12px + env(safe-area-inset-bottom,0px));transform:translateY(110%);transition:transform .3s}
+.tally.on{transform:none}
+.tally .in{max-width:1120px;margin:0 auto;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.tally .l{flex:1 1 220px;min-width:0;font-size:15px}
+.tally strong{font:800 26px var(--serif)}
+.tally button,.tally a{all:unset;cursor:pointer;font-weight:700;padding:10px 18px;border-radius:999px;background:var(--ink);color:var(--milk)}
+.tally button.g{background:none;color:var(--ink);text-decoration:underline}
+footer{border-top:1px solid var(--line);padding:28px 0 120px;color:var(--dim);font-size:15px}
+footer .wrap{display:flex;justify-content:space-between;align-items:flex-start;gap:20px 32px;flex-wrap:wrap}
+.foot-name{display:block;color:var(--milk);font-weight:700;margin-bottom:2px}
+.foot-contact{margin-left:auto;display:flex;flex-direction:column;align-items:flex-end;gap:2px;text-align:right}
+.foot-contact a{color:var(--milk);text-decoration:none}
+.foot-contact a[href^="mailto"]{color:var(--brass);text-decoration:underline;text-underline-offset:3px}
+@media(max-width:820px){
+header.hero{padding:18px 0 36px}
+.hero-grid{grid-template-columns:1fr;margin-top:28px;gap:8px}
+.pot{max-width:180px;justify-self:start}
+.lede{font-size:16px;margin-bottom:0}
+.logo{height:64px}
+.wrap{padding:0 16px}
+.bar .wrap{padding-left:16px;padding-right:16px}
+input[type=search]{flex-basis:100%;max-width:none}
+.chips{flex-basis:100%}
+.start{grid-template-columns:1fr}
+.start button{border-right:0;border-bottom:1px solid var(--line)}
+section.cat h2{flex-wrap:wrap;gap:6px 14px}
+.tally{padding-left:16px;padding-right:16px}
+.tally .in{align-items:stretch}
+.tally .l{flex-basis:100%}
+.tally button,.tally a{text-align:center}
+footer{padding-bottom:150px}
+.foot-contact{margin-left:0;align-items:flex-start;text-align:left;margin-top:12px}
+}
+@media(max-width:420px){
+h1{font-size:34px}
+.call{padding:10px 14px}
+li .img{height:210px}
+}
+.loader{position:fixed;inset:0;z-index:40;display:grid;place-items:center;background:radial-gradient(ellipse at center,#1a3d30 0%,var(--bg) 58%);transition:opacity .85s cubic-bezier(.16,1,.3,1),visibility .85s}
+.loader.off{opacity:0;visibility:hidden}
+.loader-stage{display:flex;flex-direction:column;align-items:center;gap:26px}
+.mark{position:relative;width:min(248px,68vw);aspect-ratio:1}
+.mark-glow{position:absolute;inset:-28%;border-radius:50%;background:radial-gradient(circle,rgba(224,147,47,.22) 0%,rgba(214,169,72,.06) 36%,transparent 64%);animation:mark-glow 1.5s cubic-bezier(.16,1,.3,1) both;pointer-events:none}
+.mark img{position:relative;z-index:1;width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 22px 26px rgba(0,0,0,.5));animation:mark-stamp 1.05s cubic-bezier(.16,1,.3,1) both}
+.mark-foil{position:absolute;z-index:2;inset:11%;border-radius:50%;overflow:hidden;pointer-events:none;-webkit-mask-image:radial-gradient(circle,#000 62%,transparent 66%);mask-image:radial-gradient(circle,#000 62%,transparent 66%)}
+.mark-foil::after{content:"";position:absolute;top:-10%;bottom:-10%;left:0;width:38%;background:linear-gradient(90deg,transparent,rgba(255,248,230,.95),transparent);mix-blend-mode:screen;animation:mark-foil .85s cubic-bezier(.65,0,.35,1) .55s both}
+.wisps{position:absolute;z-index:3;left:50%;top:-26%;width:50%;height:40%;transform:translateX(-50%);overflow:visible;pointer-events:none}
+.wisps path{fill:none;stroke:rgba(241,227,200,.9);stroke-width:1.6;stroke-linecap:round;stroke-dasharray:70;stroke-dashoffset:70;opacity:0;animation:mark-wisp 1.45s ease-out forwards}
+.wisps path:nth-child(1){animation-delay:.72s}
+.wisps path:nth-child(2){animation-delay:.92s}
+.wisps path:nth-child(3){animation-delay:1.08s}
+.count-wrap{display:flex;flex-direction:column;align-items:center;gap:10px;animation:count-in .55s cubic-bezier(.16,1,.3,1) both}
+.count{margin:0;font:500 20px/1 var(--serif);letter-spacing:.04em;color:var(--brass);font-variant-numeric:tabular-nums}
+.count .pct{font-size:.68em;letter-spacing:0;margin-left:1px}
+.count-rule{display:block;width:84px;height:1px;background:rgba(214,169,72,.28)}
+.count-rule i{display:block;height:100%;width:0;background:var(--brass)}
+body.loading{overflow:hidden}
+@keyframes mark-stamp{0%{opacity:0;transform:translateY(-16px) scale(1.07)}38%{opacity:1}64%{transform:translateY(2px) scale(.988)}100%{opacity:1;transform:none}}
+@keyframes mark-glow{0%{opacity:0;transform:scale(.72)}70%{opacity:1;transform:scale(1)}100%{opacity:.75;transform:scale(1.04)}}
+@keyframes mark-foil{from{transform:translateX(-130%)}to{transform:translateX(340%)}}
+@keyframes mark-wisp{0%{stroke-dashoffset:70;opacity:0}22%{opacity:.8}100%{stroke-dashoffset:0;opacity:0}}
+@keyframes count-in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.steam path{animation:none;opacity:.5}html{scroll-behavior:auto}.tally{transition:none}li .img img{transition:none}li:hover .img img{transform:none}.loader{transition:none}.mark img,.mark-glow,.mark-foil::after,.wisps path,.count-wrap{animation:none}.mark img{opacity:1;transform:none}.mark-glow{opacity:.7;transform:none}.mark-foil,.wisps{display:none}.count-wrap{opacity:1;transform:none}}
+</style>
+</head>
+<body class="loading">
+<div class="loader" id="loader" role="status" aria-live="polite" aria-label="Taste Tea Briyani and Grill" aria-busy="true">
+ <div class="loader-stage">
+  <div class="mark">
+   <span class="mark-glow" aria-hidden="true"></span>
+   <img src="logo-mark.png" alt="" width="176" height="176">
+   <span class="mark-foil" aria-hidden="true"></span>
+   <svg class="wisps" viewBox="0 0 80 70" aria-hidden="true">
+    <path d="M26 66c-1-12 8-16 2-28-4-8 3-13 0-24"/>
+    <path d="M40 68c5-14-6-20 2-32 6-9-1-16 3-28"/>
+    <path d="M54 64c-1-10 7-15 2-26-3-7 4-12 1-22"/>
+   </svg>
+  </div>
+  <div class="count-wrap" aria-hidden="true">
+   <p class="count"><span id="count">0</span><span class="pct">%</span></p>
+   <span class="count-rule"><i id="count-bar"></i></span>
+  </div>
+ </div>
+</div>
+<script>
+(function(){
+ var el=document.getElementById("loader"),t0=Date.now(),gone=false;
+ var num=document.getElementById("count"),bar=document.getElementById("count-bar");
+ var reduce=window.matchMedia("(prefers-reduced-motion:reduce)").matches;
+ if(reduce){
+  if(num)num.textContent="100";
+  if(bar)bar.style.width="100%";
+ }else{
+  var dur=2100,c0=0;
+  function tick(now){
+   var p=Math.min(1,(now-c0)/dur),eased=1-Math.pow(1-p,3),n=Math.round(eased*100);
+   if(num)num.textContent=String(n);
+   if(bar)bar.style.width=n+"%";
+   if(p<1)requestAnimationFrame(tick);
+  }
+  requestAnimationFrame(function(now){c0=now;requestAnimationFrame(tick)});
+ }
+ function hide(){
+  if(gone||!el)return;
+  gone=true;
+  setTimeout(function(){
+   el.classList.add("off");
+   el.setAttribute("aria-busy","false");
+   document.body.classList.remove("loading");
+   setTimeout(function(){if(el.parentNode)el.remove()},700);
+  },Math.max(0,2400-(Date.now()-t0)));
+ }
+ if(document.readyState==="complete")hide();
+ else window.addEventListener("load",hide,{once:true});
+ setTimeout(hide,4500);
+})();
+</script>
+<header class="hero">
+ <div class="wrap">
+  <nav>
+   <img class="logo" src="logo.png" alt="Taste Tea Briyani &amp; Grill" width="240" height="170">
+   <a class="call" href="tel:+18723790444">Call (872) 379-0444</a>
+  </nav>
+  <div class="hero-grid">
+   <div>
+    <h1>Biryani, karahi &amp; <em>karak chai.</em></h1>
+    <p class="lede">A Pakistani grill in Prospect Heights. Charcoal-style BBQ, slow karahis, biryani by the plate or the platter, and chai poured at the end of the meal.</p>
+   </div>
+   <svg class="pot" viewBox="0 0 300 300" role="img" aria-label="A copper pot with rising steam">
+    <g class="steam"><path d="M110 90c-18-20 18-30 0-52"/><path d="M150 84c-18-20 18-30 0-52"/><path d="M190 90c-18-20 18-30 0-52"/></g>
+    <ellipse cx="150" cy="106" rx="92" ry="20" fill="#e0932f"/>
+    <ellipse cx="150" cy="106" rx="76" ry="13" fill="#7a3d12"/>
+    <path d="M58 106c0 100 38 150 92 150s92-50 92-150c-30 20-154 20-184 0z" fill="#b8651f"/>
+    <path d="M80 130c4 70 28 108 70 118-30-20-44-68-44-110z" fill="#e0932f" opacity=".55"/>
+    <path d="M40 118c-26 0-26 40 0 40M260 118c26 0 26 40 0 40" stroke="#d6a948" stroke-width="9" fill="none" stroke-linecap="round"/>
+    <rect x="96" y="256" width="108" height="10" rx="5" fill="#d6a948"/>
+   </svg>
+  </div>
+ </div>
+</header>
+
+<div class="bar"><div class="wrap">
+ <div class="chips" id="chips" role="group" aria-label="Menu categories"></div>
+ <input type="search" id="q" placeholder="Search the menu" aria-label="Search the menu">
+</div></div>
+
+<main><div class="wrap" id="menu"></div></main>
+
+<footer><div class="wrap">
+ <div><strong class="foot-name">Taste Tea Briyani &amp; Grill</strong><div>1255 E Rand Road, Prospect Heights, IL 60004</div></div>
+ <div class="foot-contact"><a href="tel:+18723790444">(872) 379-0444</a><a href="mailto:info@tasteteagrill.com">info@tasteteagrill.com</a></div>
+</div></footer>
+
+<div class="tally" id="tally" role="region" aria-label="Your order tally"><div class="in">
+ <div class="l" id="tl"></div><strong id="tt"></strong>
+ <button class="g" id="clr">Clear</button><a href="tel:+18723790444">Call to order</a>
+</div></div>
+
+<script>
+var M=[
+["Appetizer",["Mozzarella Sticks|7.99|mozzarella-sticks.jpg","Breaded Mushrooms|7.99|breaded-mushrooms.jpg","Fries|4.99|fries.jpg","Chicken Tenders (5 Pcs)|9.99|chicken-tenders.jpg","Samosa (2 Pc)|5.99|samosa.jpg","Samosa Chaat|9.99|samosa-chaat.jpg","Papri Chaat|9.99|papri-chaat.jpg","Bun Kebab|9.99|bun-kebab.jpg"]],
+["BBQ / Grill",["Chicken Tikka (2 Pcs)|19.99|chicken-tikka.jpg","Malai Boti|19.99|malai-boti.jpg","Beef Boti|22.99|beef-boti.jpg","Seekh Kebab|19.99|seekh-kebab.jpg","Lahori Fish (2 Pc)|19.99|lahori-fish.jpg","BBQ Platter, serves 4-5|49.99|bbq-platter-small.jpg","BBQ Platter, serves 6-8|99.99|bbq-platter-large.jpg"]],
+["Main Course",["Chicken Shinwari Karahi|19.99|shinwari-karahi.jpg","Chicken Koyla Karahi|19.99|koyla-karahi.jpg","Chicken Handi|19.99|chicken-handi.jpg","Chicken Makhni / Butter Chicken|19.99|butter-chicken.jpg","Murgh Cholay|16.99|murgh-cholay.jpg","Nihari|22.99|nihari.jpg","Goat Karahi|29.99|goat-karahi.jpg"]],
+["Rice",["Chicken Biryani|15.99|chicken-biryani.jpg","Goat Biryani|21.99|goat-biryani.jpg","Chicken Tikka Boneless Biryani|16.99|tikka-biryani.jpg","Chilli Chicken Rice|14.99|chilli-chicken-rice.jpg","Plain White Rice|7.99|white-rice.jpg","Veg Biryani|12.99|veg-biryani.jpg"]],
+["Burgers & Sandwiches",["Zinger Burger|9.99|zinger-burger.jpg","Classic Chicken Club Sandwich|9.99|club-sandwich.jpg","Chicken Boti Roll|9.99|boti-roll.jpg","Chicken Cheese Roll|9.99|cheese-roll.jpg","Hamburger|9.99|hamburger.jpg","Chicken Cheese Burger|9.99|chicken-cheese-burger.jpg","Smash Burger|9.99|smash-burger.jpg","Double Cheese Burger|13.99|double-cheese-burger.jpg"]],
+["Chinese",["Chicken Chilli Dry|16.99|chilli-dry.jpg","Chicken Manchurian|16.99|manchurian.jpg","Orange Chicken|16.99|orange-chicken.jpg","Hakka Noodle|16.99|hakka-noodle.jpg","Kang Pao Chicken|16.99|kung-pao.jpg","Egg Fried Rice|12.99|egg-fried-rice.jpg","Chicken Fried Rice|16.99|chicken-fried-rice.jpg"]],
+["Bread & Complements",["Garlic Naan|3.99|garlic-naan.jpg","Butter Naan|2.99|butter-naan.jpg","Paratha|3.99|paratha.jpg","Roti|1.99|roti.jpg","Salad|5.99|salad.jpg","Raita|4.99|raita.jpg"]],
+["Dessert",["Fruit Truffle|6.99|fruit-truffle.jpg","Kheer|6.99|kheer.jpg"]],
+["Drinks",["2 Liter Soda|5.99|soda-2l.jpg","Pepsi Can|2.99|cola-can.jpg","Diet Pepsi Can|2.99|diet-cola-can.jpg","Cherry Pepsi Can|2.99|cherry-cola-can.jpg","7UP Can|2.99|lemon-lime-can.jpg","Orange Soda Can|2.99|orange-soda-can.jpg","MTN Dew Can|2.99|citrus-soda-can.jpg","Mango Lassi|4.99|mango-lassi.jpg"]],
+["Tea",["Karak Chai|3.99|karak-chai.jpg","Elaichi Chai|5.99|elaichi-chai.jpg"]]];
+var cart={},cat="All",term="",$=function(i){return document.getElementById(i)};
+function esc(s){return s.replace(/&/g,"&amp;").replace(/</g,"&lt;")}
+function chips(){var h=["All"].concat(M.map(function(c){return c[0]}));
+ $("chips").innerHTML=h.map(function(c){return '<button class="chip" aria-pressed="'+(c==cat)+'" data-c="'+esc(c)+'">'+esc(c)+'</button>'}).join("")}
+function render(){var out="",n=0;
+ M.forEach(function(c,ci){if(cat!="All"&&cat!=c[0])return;
+  var li=c[1].filter(function(x){return x.split("|")[0].toLowerCase().indexOf(term)>-1||c[0].toLowerCase().indexOf(term)>-1});
+  if(!li.length)return;n++;
+  out+='<section class="cat"><h2>'+esc(c[0])+'<small>'+li.length+' items</small></h2><ul>'+li.map(function(x){
+   var p=x.split("|"),q=cart[x]||0;
+   return '<li><div class="img"><img src="menu/'+esc(p[2])+'?v=2" alt="'+esc(p[0])+'" width="800" height="800" loading="lazy"></div><div class="b"><span class="n">'+esc(p[0])+'</span><span class="p">$'+p[1]+'</span><div class="row">'+(q?'<div class="step"><button data-m="'+esc(x)+'" aria-label="Remove one '+esc(p[0])+'">−</button><span>'+q+'</span><button data-a="'+esc(x)+'" aria-label="Add one '+esc(p[0])+'">+</button></div>':'<button class="add" data-a="'+esc(x)+'">ADD</button>')+'</div></div></li>'}).join("")+'</ul></section>'});
+ $("menu").innerHTML=out||'<p class="none">Nothing matches “'+esc(term)+'”. Try a shorter word like “chicken” or “naan”.</p>';tally()}
+function tally(){var t=0,c=0,names=[];
+ Object.keys(cart).forEach(function(k){var q=cart[k];if(q>0){var p=k.split("|");t+=q*parseFloat(p[1]);c+=q;names.push(q+"× "+p[0])}});
+ $("tally").className="tally"+(c?" on":"");
+ $("tl").textContent=c+(c==1?" item: ":" items: ")+names.join(", ");
+ $("tt").textContent="$"+t.toFixed(2)}
+document.addEventListener("click",function(e){var t=e.target.closest("button");if(!t)return;
+ if(t.dataset.c){cat=t.dataset.c;chips();render();if(window.scrollY>160)$("menu").scrollIntoView({block:"start"})}
+ else if(t.dataset.a){cart[t.dataset.a]=(cart[t.dataset.a]||0)+1;render()}
+ else if(t.dataset.m){cart[t.dataset.m]--;if(cart[t.dataset.m]<1)delete cart[t.dataset.m];render()}
+ else if(t.dataset.go){cat=t.dataset.go;chips();render();$("menu").scrollIntoView()}
+ else if(t.id=="clr"){cart={};render()}});
+$("q").addEventListener("input",function(e){term=e.target.value.trim().toLowerCase();render()});
+chips();render();
+</script>
+</body>
+</html>
